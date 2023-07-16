@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.toolTipContaienr {
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 25px;
+    background: rgba(58, 58, 151, 0.788);
+    border: 1px solid black;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.tooltip:hover {
+    scale: 1.3;
+    color: white;
+    border-color: rgb(105, 105, 151);
+    background: rgba(58, 58, 151, 0.452);
+}
+
+.tooltiphide {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tooltipshow {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gameContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 150px;
+}
+
+.playBtn {
+    width: 50px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(83, 172, 83);
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.playBtn:hover {
+    scale: 1.15;
+    background: rgb(122, 255, 122);
+    color: black;
+}
+
+.resetBtn {
+    width: 70px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(172, 83, 83);
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.resetBtn:hover {
+    scale: 1.15;
+    background: rgb(255, 122, 122);
+    color: black;
+}
+
+.choices {
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.choices h4 {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.playerChoice {
+    background: rgb(70, 70, 145);
+    color: white;
+}
+
+.computerChoice {
+    background: rgb(70, 145, 116);
+    color: white;
+}
+
+.announcer {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.announce {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}

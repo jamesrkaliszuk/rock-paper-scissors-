@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>this is a game</h1>
+        <div class="toolTipContainer">
+            <p class="tooltip">i</p>
+            <p id="showTool" class="tooltiphide">this is a game of "<strong>rock, paper, scissors</strong>"</p>
+        </div>
+    </header>
+
+    <main class="gameContainer">
+        <section class="player">
+            <h2>Player</h2>
+            <h3 id="humanScore"></h3>
+        </section>
+        <section class="computer">
+            <h2>AI</h2>
+            <h3 id="computerScore"></h3>
+        </section>
+    </main>
+    <section class="choices">
+        <h4 class="playerChoice">&infin;</h4>
+        <h4 class="computerChoice">&infin;</h4>
+    </section>
+
+    <section class="announcer">
+        <h5 id="announce" class="announce show"> Press Play To Battle!</h5>
+    </section>
+
+    <section class="btns">
+        <button class="playBtn" onclick="play()">Play!</button>
+        <button class="resetBtn" onclick="reset()">Reset!</button>
+    </section>
+</body>
+
+</html>
